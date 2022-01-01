@@ -18,6 +18,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'junegunn/goyo.vim'
 Plug 'calviken/vim-gdscript3'
 Plug 'mattn/emmet-vim'
+Plug 'vim/killersheep'
 
 call plug#end()
 " emmet
@@ -68,6 +69,7 @@ autocmd FileType markdown inoremap <C-n> <ESC>yypVr-o
 autocmd FileType markdown inoremap <bslash>ul - [](<++>)<ESC>^3li
 autocmd FileType markdown inoremap <bslash><Space> <ESC>/<++><CR>:noh<CR>:echo<CR>"_ca<
 autocmd FileType markdown set tabstop=2
+"TODO: rework \ul and \<spc> for new format
 
 nnoremap <leader>ev :split $MYVIMRC<CR>
 nnoremap <leader>sv :so $MYVIMRC<CR>

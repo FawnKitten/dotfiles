@@ -7,8 +7,8 @@ setopt interactivecomments
 setopt autocd
 
 case "$OSTYPE" in
-  darwin*)  source "dotfiles/mac.zsh" ;;
-  linux*)   source "dotfiles/linux.zsh" ;;
+  darwin*)  source "$HOME/dotfiles/mac.zsh" ;;
+  linux*)   source "$HOME/dotfiles/linux.zsh" ;;
   *)        echo "unknown: $OSTYPE" ;;
 esac
 # code taken from https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script

@@ -26,8 +26,6 @@ let g:user_emmet_leader_key='<C-C>'
 
 " molokai
 let g:molokai_original = 1
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 colorscheme molokai
 syntax on
 
@@ -36,6 +34,11 @@ syntax on
 " nnoremap F <Plug>Sneak_F
 " nnoremap t <Plug>Sneak_t
 " nnoremap T <Plug>Sneak_T
+
+" ctrl-p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'c'
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete

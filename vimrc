@@ -19,6 +19,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'calviken/vim-gdscript3'
 Plug 'mattn/emmet-vim'
 Plug 'vim/killersheep'
+Plug 'tpope/vim-repeat'
+Plug 'ziglang/zig.vim'
 
 call plug#end()
 " emmet
@@ -38,7 +40,8 @@ syntax on
 " ctrl-p
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_working_path_mode = 'r'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -71,7 +74,7 @@ let mapleader = " "
 autocmd FileType markdown inoremap <C-n> <ESC>yypVr-o
 autocmd FileType markdown inoremap <bslash>ul - [](<++>)<ESC>^3li
 autocmd FileType markdown inoremap <bslash><Space> <ESC>/<++><CR>:noh<CR>:echo<CR>"_ca<
-autocmd FileType markdown set tabstop=2
+autocmd FileType markdown setlocal tabstop=2
 "TODO: rework \ul and \<spc> for new format
 
 nnoremap <leader>ev :split $MYVIMRC<CR>

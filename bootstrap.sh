@@ -10,4 +10,6 @@ rm -rf "${HOME}/.vim"
 ln -s "${dotfiles_dir}/vim" "${HOME}/.vim"
 rm -rf "${HOME}/.vimrc"
 ln -s "${dotfiles_dir}/vimrc" "${HOME}/.vimrc"
+rm -rf "${HOME}/.ideavimrc"
+ln -s "${dotfiles_dir}/ideavimrc" "${HOME}/.ideavimrc"
 vim +PlugInstall +PlugClean! +qall

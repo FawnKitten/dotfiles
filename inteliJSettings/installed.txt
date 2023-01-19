@@ -1,0 +1,13 @@
+IdeaVIM
+Key Promoter X
+club.nutsoft.Github3Theme
+color.scheme.Molokai
+com.developerphil.adbidea
+com.intellij.marketplace
+com.jetbrains.gerryPurpleTheme
+com.joshestein.ideavim-quickscope
+io.github.mishkun.ideavimsneak
+izhangzhihao.rainbow.brackets
+mobi.hsz.idea.gitignore
+monokai-pro
+org.jetbrains.kotlin

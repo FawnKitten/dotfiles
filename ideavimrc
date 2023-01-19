@@ -1,0 +1,46 @@
+
+source ~/.vimrc
+
+" basic mappings provided by https://gist.github.com/dewaka/ef947e52767bf453eaf77c852051eb7e
+
+set ignorecase
+set smartcase
+set clipboard+=unnamed
+set number relativenumber
+set showmode
+set so=5
+set incsearch hlsearch
+set nu
+
+set ideajoin
+set sneak
+set quickscope
+set surround
+set NERDTree
+
+set splitright
+set splitbelow
+nmap <leader>h <c-w>hce
+nmap <leader>l <c-w>l
+nmap <leader>k <c-w>k
+nmap <leader>j <c-w>j
+nmap <leader>ww :action NextProjectWindow<cr>
+
+nmap <leader>u :action FindUsages<cr>
+nmap <leader>c :action GotoClass<cr>
+nmap <leader>c :action GotoClass<cr>
+
+nmap <leader>gu :action Git.Push<cr>
+nmap <leader>gp :action Git.Pull<cr>
+
+nmap <leader>x :action GotoNextError<cr>
+nmap <leader>X :action GotoPreviousError<cr>
+
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+
+vnoremap > >gv
+vnoremap < <gv
+
+nmap <leader>ws :action SplitHorizontally<cr>
+
